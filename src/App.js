@@ -21,8 +21,8 @@ function App() {
 
 
    return (
-      <div bgColor='black.500'>
-         <SimpleGrid columns={[2, null, 3]} spacing='40px' p='5'>
+      <div bgColor='red' >
+         <SimpleGrid columns={[2, null, 3]} spacing='40px' p='5' bgColor='black' h='100vh'>
 
             {data.map(item =>
                <Flex key={item.flight_number} bgColor='blue.800' w='90' p={4} direction=" column" p='6' borderRadius='2xl'>
