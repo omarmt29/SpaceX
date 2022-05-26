@@ -21,23 +21,23 @@ function App() {
 
 
    return (
-      <div bgColor='red' >
-         <SimpleGrid columns={[2, null, 3]} spacing='40px' p='5' bgColor='black' h='100vh'>
+      <div bgColor='red'>
+         <SimpleGrid columns={[1, null, 5]} spacing='40px' p='9' bgColor='black'>
 
             {data.map(item =>
-               <Flex key={item.flight_number} bgColor='blue.800' w='90' p={4} direction=" column" p='6' borderRadius='2xl'>
+               <Flex key={item.flight_number} bgColor='blue.800' w='90'  direction=" column" p='6' borderRadius='2xl' h='auto'>
 
 
                   <Flex  justifyContent='space-between' >
                      
                      <Flex direction='column'>
-                        <Text fontSize="4xl">{item.mission_name}</Text>
-                        <Text fontWeight='light' ><b>Rocket name:</b> {item.rocket.rocket_name}</Text>
-                        <Text fontWeight='light' ><b>Rocket type:</b> {item.rocket.rocket_type}</Text>
-                        <Text fontWeight='light' ><b>Launch year:</b> {item.launch_year}</Text>
-                        <Text fontWeight='light' ><b>Rocket site:</b> {item.launch_site.site_name_long}</Text>
+                        <Text fontSize="4xl" color='white'>{item.mission_name}</Text>
+                        <Text fontWeight='light' color='white' ><b>Rocket name:</b> {item.rocket.rocket_name}</Text>
+                        <Text fontWeight='light' color='white' ><b>Rocket type:</b> {item.rocket.rocket_type}</Text>
+                        <Text fontWeight='light' color='white' ><b>Launch year:</b> {item.launch_year}</Text>
+                        <Text fontWeight='light' color='white' ><b>Rocket site:</b> {item.launch_site.site_name_long}</Text>
                      </Flex>
-                     <a href={item.links.video_link} target="page_blank"><FaPlayCircle color='red.700' fontSize='40'/></a>
+                     <a href={item.links.video_link} target="page_blank"><FaPlayCircle color='white' fontSize='40'/></a>
 
                   </Flex>
                   <Flex mt='3' justifyContent='space-between' alignItems='center'>
