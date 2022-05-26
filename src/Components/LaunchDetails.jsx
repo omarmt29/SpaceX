@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom"
 import { useState, useEffect, } from "react"
 import * as API from "../Services/Launches.js";
-import { Text, Flex, Box, Button } from '@chakra-ui/react'
+import { Text, Flex, Box, Button, SimpleGrid } from '@chakra-ui/react'
 import {Link} from 'react-router-dom'
 
 export function LaunchDetails() {
@@ -15,7 +15,11 @@ export function LaunchDetails() {
     }, [launchId])
 
     return (
-        <Box bgColor='black'>
+
+        <SimpleGrid columns={[1, null, 1]} spacing='40px' w='full' p='9' bgColor='black' justifyContent='center' alignItems='center'>
+
+
+             <Box bgColor='black'>
             <Flex bgColor='blue.800' justifyContent='center' alignItems='center' direction=" column" p='6'  h='auto'>
                 <Text fontSize='xl'>Details</Text>
                 <Text textAlign='center' p='10'>{launch.details}</Text>
@@ -28,6 +32,9 @@ export function LaunchDetails() {
 
 
         </Box>
+        
+        </SimpleGrid> 
+       
 
     )
 }

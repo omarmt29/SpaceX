@@ -8,15 +8,14 @@ function App() {
 
 
    return (
-      <div bgColor='black'>
+      <div bgColor='red'>
 
-         <SimpleGrid columns={[1, null, 1]} p='0' bgColor='black' justifyContent='center' alignItems='center' w='full' h='full' >
+         <SimpleGrid columns={[1, null, 1]} p='0' bgColor='black' justifyContent='center' alignItems='center' w='full' >
             <Image w='full' src='http://assets.stickpng.com/images/5842a770a6515b1e0ad75afe.png' alt='Dan Abramov' />
             <Routes>
                <Route path='/' element={<LaunchList />} />
                <Route path='/launches/:launchId' element={<LaunchDetails />} />
             </Routes>
-
          </SimpleGrid>
 
 
