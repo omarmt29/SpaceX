@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/SpaceX/static/js/main.d7645a6b.js",
+    "main.js": "/SpaceX/static/js/main.dae64c15.js",
     "static/js/787.0c3f432a.chunk.js": "/SpaceX/static/js/787.0c3f432a.chunk.js",
     "index.html": "/SpaceX/index.html",
-    "main.d7645a6b.js.map": "/SpaceX/static/js/main.d7645a6b.js.map",
+    "main.dae64c15.js.map": "/SpaceX/static/js/main.dae64c15.js.map",
     "787.0c3f432a.chunk.js.map": "/SpaceX/static/js/787.0c3f432a.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.d7645a6b.js"
+    "static/js/main.dae64c15.js"
   ]
 }
