@@ -15,7 +15,7 @@ function App() {
                <Image w='sm' justifyContent='center' alignItems='center' src={Logo} alt='Dan Abramov' />
             </Flex>
             <Routes>
-               <Route path='/' element={<LaunchList />} />
+               <Route path='SpaceX/launches' element={<LaunchList />} />
                <Route path='/launches/:launchId' element={<LaunchDetails />} />
             </Routes>
          </SimpleGrid>
